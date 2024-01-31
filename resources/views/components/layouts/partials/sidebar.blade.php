@@ -14,31 +14,9 @@
             <div>
                 <ul class="mb-6 flex flex-col gap-1.5">
                     <li>
-                        <x-layouts.partials.sidebar.link route="dashboard">
-                            <x-mdi-view-dashboard-outline width="18" height="18" class="fill-current" />
-                            {{ __('Dashboard') }}
-                        </x-layouts.partials.sidebar.link>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <x-layouts.partials.sidebar.sub-heading-text text="Dish" />
-                <ul class="mb-6 flex flex-col gap-1 5">
-                    <li>
-                        <x-layouts.partials.sidebar.link route="dish.index">
-                            <x-mdi-space-station width="18" height="18" class="fill-current" />
-                            {{ __('EPG') }}
-                        </x-layouts.partials.sidebar.link>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <x-layouts.partials.sidebar.sub-heading-text text="Last" />
-                <ul class="mb-6 flex flex-col gap-1 5">
-                    <li>
-                        <x-layouts.partials.sidebar.link route="last.index">
-                            <x-mdi-earth width="18" height="18" class="fill-current" />
-                            {{ __('EPG') }}
+                        <x-layouts.partials.sidebar.link route="canvas">
+                            <x-mdi-code-block-tags width="18" height="18" class="fill-current" />
+                            {{ __('Canvas') }}
                         </x-layouts.partials.sidebar.link>
                     </li>
                 </ul>

@@ -12,7 +12,7 @@
      x-on:resize.window="isMobile = window.innerWidth < 1024">
     <a wire:navigate.hover x-bind:class="isMobile ? '{{ $mobileClasses }} transition-all duration-200 ease-in-out' :
         '{{ $desktopClasses }} transition-all duration-200 ease-in-out'"
-       href="{{ route('dashboard') }}">
+       href="{{ route('canvas') }}">
         <img :src="isMobile ? '{{ asset("/images/logo/rcn-logo-mobile.png") }}' : '{{ asset("/images/logo/rcn-logo.png")}}'"
              alt="Logo" />
     </a>
