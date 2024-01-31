@@ -26,10 +26,14 @@
       x-data="{ page: 'app', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'scrollTop': false }" x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
 $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
       :class="{ 'dark text-bodydark bg-boxdark-2': darkMode === true }">
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
-    <main class="w-full sm:max-w-md bg-white dark:bg-boxdark p-3 shadow-md overflow-hidden sm:rounded-lg">
-        {{ $slot }}
-    </main>
+<div class="min-h-screen flex h-screen overflow-hidde dark:bg-gray-900">
+    <div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
+        <main>
+            <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
+                {{ $slot }}
+            </div>
+        </main>
+    </div>
 </div>
 
 @livewireScriptConfig

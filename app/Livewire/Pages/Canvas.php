@@ -5,11 +5,11 @@ namespace App\Livewire\Pages;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('Dashboard | RCN Scheduler')]
-class Dashboard extends Component
+#[Title('Canvas | Laravel Canvas')]
+class Canvas extends Component
 {
     public function render()
     {
-        return view('livewire.pages.dashboard');
+        return view('livewire.pages.canvas');
     }
 }
