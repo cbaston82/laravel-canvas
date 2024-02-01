@@ -18,7 +18,10 @@ export default {
             transparent: 'transparent',
             white: '#FFFFFF',
             black: '#1C2434',
-            red: '#FB5454',
+            red: {
+                400: '#F87171',
+                600: '#DC2626',
+            },
             'black-2': '#010101',
             body: '#64748B',
             bodydark: '#AEB7C0',
@@ -27,7 +30,11 @@ export default {
             primary: '#3C50E0',
             secondary: '#80CAEE',
             stroke: '#E2E8F0',
-            gray: '#EFF4FB',
+            gray: {
+                200: '#E2E8F0',
+                500: '#6B7280',
+                900: '#0F172A',
+            },
             graydark: '#333A48',
             'gray-2': '#F7F9FC',
             'gray-3': '#FAFAFA',
@@ -226,7 +233,7 @@ export default {
                 '21/9': '21 / 9',
             },
             backgroundImage: {
-                video: 'url(\'../images/video/video.png\')',
+                video: "url('../images/video/video.png')",
             },
             content: {
                 'icon-copy': 'url("../images/icon/icon-copy-alt.svg")',
@@ -300,7 +307,8 @@ export default {
             },
             animation: {
                 linspin: 'linspin 1568.2353ms linear infinite',
-                easespin: 'easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
+                easespin:
+                    'easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
                 'left-spin':
                     'left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
                 'right-spin':
