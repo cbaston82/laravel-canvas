@@ -47,21 +47,22 @@
             @endif
 
             <div class="p-6.5">
-                <div class="mb-4.5">
-                    <x-form.input-label for="update_password_current_password" :value="__('Current Password')" />
-                    <x-form.text-input id="update_password_current_password" name="current_password" type="password" class="mt-1 block w-full" autocomplete="current-password" />
-                    <x-form.input-error class="mt-2" :messages="$errors->updatePassword->get('current_password')" />
-                </div>
-
+                @if(auth()->user()->hasPassword())
+                    <div class="mb-4.5">
+                        <x-form.input-label for="update_password_current_password" :value="__('Current Password')" />
+                        <x-form.text-input id="update_password_current_password" name="current_password" type="password" class="mt-1 block w-full" autocomplete="current-password" />
+                        <x-form.input-error class="mt-2" :messages="$errors->updatePassword->get('current_password')" />
+                    </div>
+                @endif
                 <div class="mb-4.5">
                     <x-form.input-label for="update_password_password" :value="__('New Password')" />
-                    <x-form.text-input id="update_password_password" name="password" type="password" class="mt-1 block w-full"  autocomplete="new-password" />
+                    <x-form.text-input id="update_password_password" name="password" type="password" class="mt-1 block w-full" autocomplete="new-password" />
                     <x-form.input-error class="mt-2" :messages="$errors->updatePassword->get('password')" />
                 </div>
 
                 <div class="mb-4.5">
                     <x-form.input-label for="update_password_password_confirmation" :value="__('Confirm Password')" />
-                    <x-form.text-input id="update_password_password_confirmation" name="password_confirmation" type="password" class="mt-1 block w-full"  autocomplete="new-password" />
+                    <x-form.text-input id="update_password_password_confirmation" name="password_confirmation" type="password" class="mt-1 block w-full" autocomplete="new-password" />
                     <x-form.input-error class="mt-2" :messages="$errors->updatePassword->get('password_confirmation')" />
                 </div>
 

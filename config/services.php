@@ -31,4 +31,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'twitter' => [
+        'client_id' => env('X_API_KEY'),
+        'client_secret' => env('X_API_KEY_SECRET'),
+        'redirect' => env('X_REDIRECT_URL')
+    ],
+
+    'github' => [
+        'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_SECRET'),
+        'redirect' => env('GITHUB_REDIRECT_URL')
+    ]
+
 ];

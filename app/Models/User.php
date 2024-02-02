@@ -21,6 +21,8 @@ class User extends Authenticatable implements MustVerifyEmail
         'name',
         'email',
         'password',
+        'x_id',
+        'github_id'
     ];
 
     /**
@@ -42,4 +44,9 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function hasPassword(): bool
+    {
+        return !is_null($this->password);
+    }
 }

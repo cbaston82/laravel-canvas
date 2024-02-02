@@ -10,6 +10,9 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Social\AuthCallbackController;
+use App\Http\Controllers\Social\AuthIndexController;
+use App\Http\Controllers\Social\AuthRedirectController;
 use App\Livewire\Pages;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +50,10 @@ Route::middleware('guest')->group(function () {
 
     Route::post('reset-password', [NewPasswordController::class, 'store'])
         ->name('password.store');
+
+    Route::get('/auth', AuthIndexController::class)->name('auth.index');
+    Route::get('/auth/redirect/{service}', AuthRedirectController::class)->name('auth.redirect');
+    Route::get('/auth/callback/{service}', AuthCallbackController::class)->name('auth.callback');
 });
 
 Route::middleware('auth')->group(function () {

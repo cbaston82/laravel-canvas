@@ -27,7 +27,10 @@ export default {
             primary: '#3C50E0',
             secondary: '#80CAEE',
             stroke: '#E2E8F0',
-            gray: '#EFF4FB',
+            gray: {
+                200: '#E2E8F0',
+                800: '#1E293B',
+            },
             graydark: '#333A48',
             'gray-2': '#F7F9FC',
             'gray-3': '#FAFAFA',
@@ -226,7 +229,7 @@ export default {
                 '21/9': '21 / 9',
             },
             backgroundImage: {
-                video: 'url(\'../images/video/video.png\')',
+                video: "url('../images/video/video.png')",
             },
             content: {
                 'icon-copy': 'url("../images/icon/icon-copy-alt.svg")',
@@ -300,7 +303,8 @@ export default {
             },
             animation: {
                 linspin: 'linspin 1568.2353ms linear infinite',
-                easespin: 'easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
+                easespin:
+                    'easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
                 'left-spin':
                     'left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both',
                 'right-spin':
