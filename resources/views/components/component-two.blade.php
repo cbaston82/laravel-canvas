@@ -1,4 +1,4 @@
-<div class="rounded-sm border border-stroke bg-white p-10 shadow-default dark:border-strokedark dark:bg-boxdark mt-5">
+<div class="mt-5 rounded-sm border border-stroke bg-white p-10 shadow-default dark:border-strokedark dark:bg-boxdark">
     <div class="overflow-hidden rounded-[10px]">
         <div class="max-w-full overflow-x-auto">
             <div class="min-w-[1170px]">
@@ -21,7 +21,8 @@
                 </div>
 
                 <div class="bg-white dark:bg-boxdark">
-                    <div class="grid grid-cols-12 border-t border-[#EEEEEE] px-5 py-4 dark:border-strokedark lg:px-7.5 2xl:px-11">
+                    <div
+                         class="grid grid-cols-12 border-t border-[#EEEEEE] px-5 py-4 dark:border-strokedark lg:px-7.5 2xl:px-11">
                         <div class="col-span-3">
                             <p class="text-[#637381] dark:text-bodydark">Musharof Chowdhury</p>
                         </div>

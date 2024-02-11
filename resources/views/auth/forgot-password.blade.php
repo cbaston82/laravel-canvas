@@ -14,20 +14,20 @@
 
                 <!-- Email Address -->
                 <div class="mb-4">
-                    <x-form.input-label value="email" text="name"/>
+                    <x-form.input-label value="email" text="name" />
                     <div class="relative">
-                        <x-form.text-input id="email" type="email" name="email" :value="old('email')" autofocus
-                                           autocomplete="email"/>
+                        <x-form.text-input id="email" name="email" type="email" :value="old('email')" autofocus
+                                           autocomplete="email" />
 
                         <span class="absolute right-4 top-4">
                             <x-mdi-account class="fill-current" width="22" height="22" fill="none"
-                                           viewBox="0 0 22 22" opacity="0.5"/>
+                                           viewBox="0 0 22 22" opacity="0.5" />
                         </span>
                     </div>
-                    <x-input-error :messages="$errors->get('name')" class="mt-2"/>
+                    <x-input-error class="mt-2" :messages="$errors->get('name')" />
                 </div>
 
-                <div class="flex items-center justify-end mt-4">
+                <div class="mt-4 flex items-center justify-end">
                     <x-primary-button>
                         {{ __('Email Password Reset Link') }}
                     </x-primary-button>

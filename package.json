@@ -3,7 +3,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "pretty": "./node_modules/.bin/prettier --write resources/**/*{.blade.php,.js}",
+        "pint": "./vendor/bin/pint"
     },
     "devDependencies": {
         "@prettier/plugin-php": "^0.22.1",

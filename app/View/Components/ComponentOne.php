@@ -11,7 +11,7 @@ class ComponentOne extends Component
 
     public function testChildComponentOne()
     {
-       $this->buttonText = 'Pressed';
+        $this->buttonText = 'Pressed';
     }
 
     public function render(): View

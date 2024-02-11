@@ -3,8 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Laravel\Pennant\Feature;
-use App\Models\User;
 
 class AppServiceProvider extends ServiceProvider
 {

@@ -47,8 +47,18 @@
     },
     "scripts": {
         "post-autoload-dump": [
+            "rm -f bootstrap/cache/*.php 2>/dev/null || true",
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php artisan package:discover --ansi",
+            "@php artisan view:clear",
+            "@php artisan icons:clear"
+        ],
+        "post-install-cmd": [
+            "rm -f bootstrap/cache/*.php 2>/dev/null || true",
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan view:clear",
+            "@php artisan icons:clear"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"

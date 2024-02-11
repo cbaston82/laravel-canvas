@@ -13,5 +13,11 @@
     "trailingComma": "es5",
     "tabWidth": 4,
     "semi": false,
-    "singleQuote": true
+    "singleQuote": true,
+    "wrapAttributes": "aligned-multiple",
+    "singleAttributePerLine": false,
+    "printWidth": 120,
+    "sortTailwindcssClasses": true,
+    "tailwindcssConfigPath": "./tailwind.config.js",
+    "sortHtmlAttributes": "code-guide"
 }

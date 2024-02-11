@@ -14,7 +14,7 @@ use App\Livewire\Pages;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.welcome');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
